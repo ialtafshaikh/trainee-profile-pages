@@ -3,17 +3,19 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 //pages
 import AboutUs from "../pages/AboutUs";
+import Test from "../pages/test";
 
 export default class Router extends Component {
-  render() {
-    return (
-      <div>
-        <BrowserRouter>
-          <Switch>
-            <Route path="/about" exact component={AboutUs} />
-          </Switch>
-        </BrowserRouter>
-      </div>
-    );
-  }
+	render() {
+		return (
+			<div>
+				<BrowserRouter>
+					<Switch>
+						<Route path="/about" exact component={AboutUs} />
+						<Route path="/test" exact component={Test} />
+					</Switch>
+				</BrowserRouter>
+			</div>
+		);
+	}
 }
