@@ -5,7 +5,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import AboutUs from "../pages/AboutUs";
 import Test from "../pages/test";
 import ContactUs from "../pages/ContactUs";
-import Dummy from "../pages/dummy";
+import Test2 from "../pages/test2";
 
 export default class Router extends Component {
 	render() {
@@ -16,7 +16,7 @@ export default class Router extends Component {
 						<Route path="/about" exact component={AboutUs} />
 						<Route path="/contact" exact component={ContactUs} />
 						<Route path="/test" exact component={Test} />
-						<Route path="/dummy" exact component={Dummy} />
+						<Route path="/test2" exact component={Test2} />
 					</Switch>
 				</BrowserRouter>
 			</div>
