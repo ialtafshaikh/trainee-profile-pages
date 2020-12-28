@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 //pages
 import AboutUs from "../pages/AboutUs";
+import ContactUs from "../pages/ContactUs";
 
 export default class Router extends Component {
   render() {
@@ -11,6 +12,7 @@ export default class Router extends Component {
         <BrowserRouter>
           <Switch>
             <Route path="/about" exact component={AboutUs} />
+            <Route path="/contact" exact component={ContactUs} />
           </Switch>
         </BrowserRouter>
       </div>
