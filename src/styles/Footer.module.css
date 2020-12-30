@@ -1,0 +1,45 @@
+#copyright {
+  border-top: 20px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  background: #333333;
+  bottom: 0;
+}
+
+#copyright p {
+  display: inline;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: white;
+}
+
+#copyright a {
+  text-decoration: none;
+  color: white;
+}
+
+/*footer icon*/
+ul.contact {
+  display: inline;
+  list-style: none;
+}
+
+ul.contact li {
+  display: inline;
+  font-size: 1em;
+}
+
+ul.contact li span {
+  margin: 20px;
+}
+
+ul.contact li a {
+  color: white;
+}
+
+ul.contact li a:before {
+  display: inline;
+  background: #4c93b9;
+  line-height: 40px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
