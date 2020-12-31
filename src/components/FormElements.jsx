@@ -92,10 +92,25 @@ export default class FormElements extends Component {
               />
             </div>
             <div>
-              <label htmlFor="socialLinks">Social Links:</label>
+              <h3>Social Links:</h3>
+              <label htmlFor="gitHub">gitHub</label>
               <input
                 type="text"
-                name="socialLinks"
+                name="gitHub"
+                className={FormElementStyles.inputField}
+              />
+              <br />
+              <label htmlFor="linkedIn">LinkedIn</label>
+              <input
+                type="text"
+                name="linkedIn"
+                className={FormElementStyles.inputField}
+              />
+              <br />
+              <label htmlFor="website">Website</label>
+              <input
+                type="text"
+                name="website"
                 className={FormElementStyles.inputField}
               />
             </div>
