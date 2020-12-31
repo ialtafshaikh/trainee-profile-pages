@@ -1,0 +1,65 @@
+.title {
+  color: grey;
+  font-size: 18px;
+}
+.box img {
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+}
+.box p,
+.box h1 {
+  padding-left: 20px;
+}
+
+.box {
+  margin: 30px;
+  color: black;
+  display: flex;
+  height: 90vh;
+  background: white;
+  border-radius: 20px;
+  flex-direction: column;
+  box-shadow: 20px 20px 25px black;
+}
+.box .details {
+  padding-left: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.box .details h1 {
+  padding-top: 10%;
+  flex-direction: column;
+}
+
+.box .details button {
+  font-size: 20px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 5px black;
+}
+
+.box .content {
+  margin-left: 10%;
+  width: 80%;
+}
+.box .content p {
+  font-size: 20px;
+  align-content: center;
+  text-align: justify;
+}
+a {
+  color: black;
+  text-align: end;
+  align-content: flex-end;
+}
+.box .content .back {
+  align-content: center;
+}
+.box .content p a {
+  padding: 20px;
+}
