@@ -7,26 +7,27 @@ class AddEmployeeForm extends Component {
   //add new employee details from form
   submitForm = (event) => {
     event.preventDefault();
+    // console.log(event.target.imageUrl.files[0]);
+    let form = event.target;
+    let formObj = new FormData();
+    formObj.append("firstName", form.firstName.value);
+    formObj.append("lastName", form.lastName.value);
+    formObj.append("company", form.company.value);
+    formObj.append("email", form.email.value);
+    formObj.append("contact", form.contact.value);
+    formObj.append("imageUrl", form.imageUrl.files[0]);
+    formObj.append("skills", form.skills.value.split(","));
+    formObj.append("altDescription", form.altDescription.value);
+    formObj.append("hobbies", form.hobbies.value.split(","));
+    formObj.append("gitHub", form.gitHub.value);
+    formObj.append("linkedIn", form.linkedIn.value);
+    formObj.append("website", form.website.value);
 
     fetch(url, {
       method: "POST",
 
-      headers: {
-        "Content-Type": "application/json",
-      },
       mode: "cors",
-      body: JSON.stringify({
-        firstName: event.target.firstName.value,
-        lastName: event.target.lastName.value,
-        company: event.target.company.value,
-        email: event.target.email.value,
-        contact: event.target.contact.value,
-        imageUrl: event.target.imageUrl.value,
-        skills: event.target.skills.value.split(","),
-        altDescription: event.target.altDescription.value,
-        hobbies: event.target.hobbies.value.split(","),
-        socialLinks: [event.target.socialLinks.value],
-      }),
+      body: formObj,
     })
       .then((response) => {
         return response.json();
