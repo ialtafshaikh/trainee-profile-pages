@@ -45,21 +45,23 @@ class AddEmployeeForm extends Component {
       <div className={FormElementStyles.container}>
         <form onSubmit={this.submitForm}>
           <FormElements />
-          <button
-            type="submit"
-            value="submit"
-            className={FormElementStyles.button}
-          >
-            Submit
-          </button>
-          &nbsp;&nbsp;
-          <button
-            type="reset"
-            value="Reset"
-            className={FormElementStyles.button}
-          >
-            Reset
-          </button>
+          <div className={FormElementStyles.buttons}>
+            <button
+              type="submit"
+              value="submit"
+              className={FormElementStyles.button}
+            >
+              Submit
+            </button>
+            &nbsp;&nbsp;
+            <button
+              type="reset"
+              value="Reset"
+              className={FormElementStyles.button}
+            >
+              Reset
+            </button>
+          </div>
         </form>
       </div>
     );
