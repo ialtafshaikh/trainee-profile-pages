@@ -1,7 +1,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  border: 5px solid red;
   margin: 20px;
   margin-left: 10%;
   width: 80%;
@@ -36,7 +35,6 @@
   margin-left: 25%;
 }
 .elementContainer1 {
-  border: 2px solid black;
   margin-top: 15px;
 }
 .elementContainer1 div {
