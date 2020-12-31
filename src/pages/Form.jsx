@@ -7,7 +7,6 @@ class AddEmployeeForm extends Component {
   //add new employee details from form
   submitForm = (event) => {
     event.preventDefault();
-    // event.target.skills.value
 
     fetch(url, {
       method: "POST",
@@ -23,9 +22,9 @@ class AddEmployeeForm extends Component {
         email: event.target.email.value,
         contact: event.target.contact.value,
         imageUrl: event.target.imageUrl.value,
-        skills: [event.target.skills.value],
+        skills: event.target.skills.value.split(","),
         altDescription: event.target.altDescription.value,
-        hobbies: [event.target.hobbies.value],
+        hobbies: event.target.hobbies.value.split(","),
         socialLinks: [event.target.socialLinks.value],
       }),
     })
