@@ -16,11 +16,15 @@
   margin: 30px;
   color: black;
   display: flex;
-  height: 90vh;
   background: white;
   border-radius: 20px;
   flex-direction: column;
   box-shadow: 20px 20px 25px black;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  padding: 5px;
+  flex: 1 0 25%;
 }
 .box .details {
   padding-left: 10%;
@@ -41,6 +45,7 @@
   border-radius: 30px;
   background-color: whitesmoke;
   box-shadow: 2px 2px 5px black;
+  color: black;
 }
 
 .box .content {
