@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 //pages
 import Home from "../pages/Home";
+import Form from "../pages/Form";
 
 //components
 
@@ -16,11 +17,12 @@ export default class Router extends Component {
   render() {
     return (
       <div>
-        <Header />
         <BrowserRouter>
+          <Header />
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/profile/:employeeId" exact component={CardDetail} />
+            <Route path="/form" exact component={Form} />
           </Switch>
         </BrowserRouter>
         <Footer />
