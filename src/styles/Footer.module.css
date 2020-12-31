@@ -1,4 +1,5 @@
 #copyright {
+  margin: 0;
   border-top: 20px solid rgba(255, 255, 255, 0.08);
   text-align: center;
   background: #333333;
@@ -19,13 +20,13 @@
 
 /*footer icon*/
 ul.contact {
-  display: inline;
   list-style: none;
 }
 
 ul.contact li {
   display: inline;
   font-size: 1em;
+  padding: 10px;
 }
 
 ul.contact li span {
