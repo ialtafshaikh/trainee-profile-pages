@@ -16,6 +16,7 @@ export default class FormElements extends Component {
                 className={FormElementStyles.inputField}
               />
             </div>
+            <br />
             <div>
               <label htmlFor="lastName">Last Name:</label>
               <input
@@ -24,8 +25,7 @@ export default class FormElements extends Component {
                 className={FormElementStyles.inputField}
               />
             </div>
-          </div>
-          <div className={FormElementStyles.elementContainer1}>
+            <br />
             <div>
               <label htmlFor="company">Company:</label>
               <input
@@ -34,6 +34,7 @@ export default class FormElements extends Component {
                 className={FormElementStyles.inputField}
               />
             </div>
+            <br />
             <div>
               <label htmlFor="email">Email:</label>
               <input
@@ -42,9 +43,7 @@ export default class FormElements extends Component {
                 className={FormElementStyles.inputField}
               />
             </div>
-          </div>
-
-          <div className={FormElementStyles.elementContainer1}>
+            <br />
             <div>
               <label htmlFor="contact">contact:</label>
               <input
@@ -53,6 +52,7 @@ export default class FormElements extends Component {
                 className={FormElementStyles.inputField}
               />
             </div>
+            <br />
             <div>
               <label htmlFor="imageUrl">ProfilePic:</label>
               <input
@@ -61,9 +61,7 @@ export default class FormElements extends Component {
                 className={FormElementStyles.inputField}
               />
             </div>
-          </div>
-
-          <div className={FormElementStyles.elementContainer1}>
+            <br />
             <div>
               <label htmlFor="skills">Skills:</label>
               <input
@@ -72,17 +70,19 @@ export default class FormElements extends Component {
                 className={FormElementStyles.inputField}
               />
             </div>
+            <br />
             <div>
               <label htmlFor="altDescription">About:</label>
-              <input
-                type="text"
+              <textarea
+                rows="5"
+                cols="50"
                 name="altDescription"
-                className={FormElementStyles.inputField}
+                className={
+                  (FormElementStyles.inputField, FormElementStyles.about)
+                }
               />
             </div>
-          </div>
-
-          <div className={FormElementStyles.elementContainer1}>
+            <br />
             <div>
               <label htmlFor="hobbies">Hobbies:</label>
               <input
@@ -91,6 +91,8 @@ export default class FormElements extends Component {
                 className={FormElementStyles.inputField}
               />
             </div>
+            <br />
+            <br />
             <div>
               <h3>Social Links:</h3>
               <label htmlFor="gitHub">gitHub</label>
