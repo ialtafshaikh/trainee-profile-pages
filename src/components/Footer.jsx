@@ -16,12 +16,12 @@ function Footer() {
         </li>
         <li>
           <a href="www.facebook.com">
-            <FaFacebook size="2em" />
+            <FaFacebook size="2em" color="#00acee" />
           </a>
         </li>
         <li>
           <a href="www.instagram.com">
-            <FaInstagram size="2em" />
+            <FaInstagram size="2em" className={footerStyles.insta} />
           </a>
         </li>
       </ul>
