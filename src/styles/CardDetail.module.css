@@ -68,3 +68,8 @@ a {
 .box .content p a {
   padding: 20px;
 }
+h3,
+h4 {
+  padding: 0px;
+  margin: 0px;
+}
