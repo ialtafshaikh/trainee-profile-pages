@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import detail from "../styles/CardDetail.module.css";
-import { FaBackward, FaGithub, FaLinkedin, FaGlobe } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaGlobe } from "react-icons/fa";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
@@ -33,32 +33,42 @@ export default class CardDetail extends Component {
                   <h1>
                     {employee.firstName} {employee.lastName}
                   </h1>
+                  <h3>Company</h3>
                   <p>{employee.company}</p>
                   {/* addd email link to contact */}
-                  <button className={detail.skills}>{employee.skills}</button>
+                  <h3>Skills</h3>
+                  <p>
+                    {employee.skills.map((skill) => {
+                      return <button className={detail.skills}>{skill}</button>;
+                    })}
+                  </p>
                 </div>
               </div>
               <div className={detail.content}>
-                <p>{employee.hobbies}</p>
-                <p>{employee.altDescription}</p>
+                <p>
+                  <h4>Hobbies</h4> {employee.hobbies}
+                </p>
+                <p>
+                  <h3>About</h3>
+                  {employee.altDescription}
+                </p>
                 <p>
                   <a href={employee.socialLinks[0].gitHub}>
                     <FaGithub size="2em" />
                   </a>
 
                   <a href={employee.socialLinks[0].linkedIn}>
-                    <FaLinkedin size="2em" />
+                    <FaLinkedin size="2em" color="#0e76a8" />
                   </a>
 
                   <a href={employee.socialLinks[0].website}>
-                    <FaGlobe size="2em" />
+                    <FaGlobe size="2em" color=" #495e7b" />
                   </a>
                 </p>
                 <p className={detail.back}>
                   <Link to="/">
                     <AiOutlineArrowLeft size="2em" />
                   </Link>
-                  back
                 </p>
               </div>
             </div>
