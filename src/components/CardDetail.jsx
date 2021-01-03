@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import detail from "../styles/CardDetail.module.css";
+import { AiTwotoneMail, AiFillShop } from "react-icons/ai";
+import { GiSkills } from "react-icons/gi";
+import { CgBoy } from "react-icons/cg";
 import { FaGithub, FaLinkedin, FaGlobe } from "react-icons/fa";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { Link } from "react-router-dom";
@@ -30,26 +33,41 @@ export default class CardDetail extends Component {
 							<div className={detail.details}>
 								<img src={employee.imageUrl} alt={employee.firstName} />
 								<div>
+									<br />
+									<br />
 									<h1>
 										{employee.firstName} {employee.lastName}
 									</h1>
-									<h3>Company</h3>
-									<p>{employee.company}</p>
-									{/* addd email link to contact */}
-									<h3>Skills</h3>
-									<p>
-										{employee.skills.map((skill) => {
-											return (
-												<button className={detail.skills}>
-													{skill}
-												</button>
-											);
-										})}
-									</p>
+									<br />
+									<br />
+									<br />
+									<AiFillShop />{" "}
+									<span className={detail.cardspan}>Company : </span>
+									{employee.company}
+									<br />
+									<br />
+									<AiTwotoneMail />{" "}
+									<span className={detail.cardspan}>Email : </span>
+									{employee.email}
+									<br />
+									<br />
+									<GiSkills />{" "}
+									<span className={detail.cardspan}>Skills : </span>
+									{employee.skills.map((skill) => {
+										return (
+											<span className={detail.skills}>{skill}</span>
+										);
+									})}
+									<br />
+									<br />
+									<CgBoy />{" "}
+									<span className={detail.cardspan}> Hobbies : </span>
+									{employee.hobbies}
+									<br />
+									<br />
 								</div>
 							</div>
 							<div className={detail.content}>
-								<h4>Hobbies</h4> {employee.hobbies}
 								<br />
 								<br />
 								<h4>About</h4>

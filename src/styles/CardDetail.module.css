@@ -71,13 +71,15 @@ a {
 .box .content p a {
 	padding: 20px;
 }
-h3,
-h4 {
-	padding: 10px 0;
-	margin: 0px;
+.skills {
+	margin: 0 10px;
+}
+.cardspan {
+	font-size: 20px;
+	font-weight: 800;
 }
 
-h3:hover,
-h4:hover {
+span:hover {
+	transform: scale(1.2);
 	text-decoration: underline;
 }

@@ -7,7 +7,6 @@ class AddEmployeeForm extends Component {
 	//add new employee details from form
 	submitForm = (event) => {
 		event.preventDefault();
-
 		let form = event.target;
 		let formObj = new FormData();
 		formObj.append("firstName", form.firstName.value);
@@ -34,10 +33,12 @@ class AddEmployeeForm extends Component {
 			.then((data) => {
 				form.reset();
 				alert("Form Submitted Successfully");
+				console.log(data);
 			})
 			.catch((err) => {
-				alert(err);
 				alert(`${form.firstName.value}, Please try again :)`);
+				alert(err);
+				console.log(err);
 			});
 	};
 	//markup for add employee form

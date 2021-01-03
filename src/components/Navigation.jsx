@@ -12,7 +12,7 @@ export default class Navigation extends Component {
 						<FaHome title="Home" />
 					</Link>
 					<Link to="/profiles">
-						<FaRegIdCard title="Employee Details" />
+						<FaRegIdCard title="Employee Profiles" />
 					</Link>
 					<Link to="/form">
 						<FaPlus title="Employee Add" />
