@@ -1,0 +1,24 @@
+div.divIndex {
+	margin-left: 500px;
+	padding-top: 250px;
+}
+
+h1.indexh1 {
+	width: 50%;
+	color: black;
+	font-size: 40px;
+}
+h1.indexh1:hover {
+	transform: scale(1.2);
+	text-decoration: underline;
+	color: #333;
+}
+p.indexp {
+	width: 50%;
+	font-size: 20px;
+	color: #333;
+}
+p.indexp:hover {
+	transform: scale(1.1);
+	text-decoration: underline;
+}

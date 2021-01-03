@@ -1,46 +1,50 @@
 .header {
-  background: #333333;
-  display: flex;
-  width: 100%;
-  top: 0;
-  z-index: 9999;
-  position: fixed;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  flex: 1 0 25%;
+	background: #333333;
+	display: flex;
+	width: 100%;
+	top: 0;
+	z-index: 9999;
+	position: fixed;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	flex: 1 0 25%;
 }
 #logo {
-  margin-left: 15%;
-  display: flex;
+	margin-left: 15%;
+	display: flex;
+}
+#titlePart {
+	display: flex;
+	flex-direction: row;
 }
 #logo img {
-  width: 60px;
-  padding: 5px;
+	width: 60px;
+	padding: 5px;
 }
 #h1 {
-  margin: 10px;
-  color: white;
+	margin: 10px;
+	color: white;
 }
 .container {
-  width: 100%;
+	width: 100%;
 }
 /* menu*/
 #menu {
-  display: inline;
-  margin-left: 40%;
-  font-size: 20px;
+	display: inline;
+	margin-left: 40%;
+	font-size: 20px;
 }
 #menu p {
-  display: flex;
-  flex-direction: row;
-  padding-left: 20px;
-  cursor: default;
-  color: white;
+	display: flex;
+	flex-direction: row;
+	padding-left: 20px;
+	cursor: default;
+	color: white;
 }
 #menu p a {
-  padding-left: 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
-  cursor: default;
+	padding-left: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	cursor: default;
 }

@@ -1,61 +1,69 @@
+body {
+	padding-bottom: 100px;
+}
 #copyright {
-  margin: 0;
-  border-top: 20px solid rgba(255, 255, 255, 0.08);
-  text-align: center;
-  background: #333333;
-  bottom: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  flex: 0 0 25%;
+	margin: 0;
+	width: 100%;
+	border-top: 20px solid rgba(255, 255, 255, 0.08);
+	text-align: center;
+	background: #333333;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	flex: 0 0 25%;
 }
 
 #copyright p {
-  display: inline;
-  letter-spacing: 1px;
-  font-size: 16px;
-  color: white;
+	display: inline;
+	letter-spacing: 1px;
+	font-size: 16px;
+	color: white;
 }
 
 #copyright a {
-  text-decoration: none;
-  color: white;
+	text-decoration: none;
+	color: white;
 }
 
 /*footer icon*/
 ul.contact {
-  list-style: none;
+	list-style: none;
 }
 
 ul.contact li {
-  display: inline;
-  font-size: 1em;
-  padding: 10px;
+	display: inline;
+	font-size: 1em;
+	padding: 10px;
 }
 
 ul.contact li span {
-  margin: 20px;
+	margin: 20px;
 }
 
 ul.contact li a {
-  color: white;
+	color: white;
 }
 
 ul.contact li a:before {
-  display: inline;
-  background: #4c93b9;
-  line-height: 40px;
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
+	display: inline;
+	background: #4c93b9;
+	line-height: 40px;
+	text-align: center;
+	color: rgba(255, 255, 255, 1);
 }
 .insta {
-  border-radius: 10px;
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
+	border-radius: 10px;
+	background: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
 }
