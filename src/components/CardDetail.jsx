@@ -26,7 +26,7 @@ export default class CardDetail extends Component {
 			<div>
 				{this.state.employees.map((employee) => {
 					return (
-						<div className={detail.box}>
+						<div className={detail.box} key={employee.employeeId}>
 							<div className={detail.details}>
 								<img src={employee.imageUrl} alt={employee.firstName} />
 								<div>
@@ -50,6 +50,8 @@ export default class CardDetail extends Component {
 							</div>
 							<div className={detail.content}>
 								<h4>Hobbies</h4> {employee.hobbies}
+								<br />
+								<br />
 								<h4>About</h4>
 								{employee.altDescription}
 								<p>
@@ -66,7 +68,7 @@ export default class CardDetail extends Component {
 									</a>
 								</p>
 								<p className={detail.back}>
-									<Link to="/detail">
+									<Link to="/profiles">
 										<AiOutlineArrowLeft size="2em" />
 									</Link>
 								</p>

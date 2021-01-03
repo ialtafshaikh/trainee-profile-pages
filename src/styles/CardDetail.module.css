@@ -4,8 +4,8 @@
 }
 .box img {
 	padding: 20px;
-	width: 200px;
-	height: 200px;
+	width: 350px;
+	height: 350px;
 }
 .box p,
 .box h1 {
@@ -13,7 +13,8 @@
 }
 
 .box {
-	margin: 30px;
+	margin: 100px 0 0 200px;
+	width: 75%;
 	color: black;
 	display: flex;
 	background: white;
@@ -22,7 +23,6 @@
 	box-shadow: 20px 20px 25px black;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	margin-top: 100px;
 	padding: 5px;
 	flex: 1 0 25%;
 }
@@ -73,6 +73,11 @@ a {
 }
 h3,
 h4 {
-	padding: 0px;
+	padding: 10px 0;
 	margin: 0px;
+}
+
+h3:hover,
+h4:hover {
+	text-decoration: underline;
 }

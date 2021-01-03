@@ -7,7 +7,7 @@ class AddEmployeeForm extends Component {
 	//add new employee details from form
 	submitForm = (event) => {
 		event.preventDefault();
-		// console.log(event.target.imageUrl.files[0]);
+
 		let form = event.target;
 		let formObj = new FormData();
 		formObj.append("firstName", form.firstName.value);
@@ -25,7 +25,6 @@ class AddEmployeeForm extends Component {
 
 		fetch(url, {
 			method: "POST",
-
 			mode: "cors",
 			body: formObj,
 		})
@@ -33,14 +32,13 @@ class AddEmployeeForm extends Component {
 				return response.json();
 			})
 			.then((data) => {
-				console.log(data);
+				form.reset();
+				alert("Form Submitted Successfully");
 			})
 			.catch((err) => {
-				console.log(err);
+				alert(err);
+				alert(`${form.firstName.value}, Please try again :)`);
 			});
-		alert("Formed Saved Successfully");
-
-		form.reset();
 	};
 	//markup for add employee form
 	render() {

@@ -11,7 +11,7 @@ export default class Navigation extends Component {
 					<Link to="/">
 						<FaHome title="Home" />
 					</Link>
-					<Link to="/detail">
+					<Link to="/profiles">
 						<FaRegIdCard title="Employee Details" />
 					</Link>
 					<Link to="/form">

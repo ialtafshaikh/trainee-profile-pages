@@ -1,75 +1,82 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-  margin-left: 10%;
-  width: 80%;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 20px 20px 25px black;
-  margin-top: 100px;
-  margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	margin-left: 10%;
+	width: 80%;
+	background: white;
+	border-radius: 20px;
+	box-shadow: 20px 20px 25px black;
+	margin-top: 100px;
+	margin-bottom: 30px;
 }
 .container .buttons {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
 }
 .mainDiv {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 10%;
-  margin-bottom: 0;
-  width: 80%;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	margin-left: 10%;
+	margin-bottom: 0;
+	width: 80%;
 }
 .mainDiv h1 {
-  text-align: center;
+	text-align: center;
+}
+.mainDiv h1:hover {
+	transform: scale(1.1);
+	text-decoration: underline;
 }
 .mainDiv .elementContainer1 {
-  align-content: center;
-  width: 80%;
-  margin-left: 10%;
+	align-content: center;
+	width: 80%;
+	margin-left: 10%;
 }
 .elementContainer1 {
-  margin-top: 15px;
+	margin-top: 15px;
 }
 .elementContainer1 div {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 .elementContainer1 div label {
-  text-align: left;
+	text-align: left;
 }
 .inputLabel {
-  padding: 10px;
-  width: 100%;
-  height: 80%;
-  align-content: flex-start;
+	padding: 10px;
+	width: 100%;
+	height: 80%;
+	align-content: flex-start;
 }
 .inputField {
-  font-size: 20px;
-  padding: 10px;
-  border: none;
-  border-bottom: 2px solid blue;
-  text-decoration: none;
-  background-color: white;
+	font-size: 20px;
+	padding: 10px;
+	border: none;
+	border-bottom: 2px solid blue;
+	text-decoration: none;
+	background-color: white;
 }
 
 button {
-  font-size: 20px;
-  align-items: center;
-  padding: 10px;
-  color: white;
-  background-color: black;
-  border: none;
+	font-size: 20px;
+	align-items: center;
+	padding: 10px;
+	color: white;
+	background-color: black;
+	border: none;
 }
 .about {
-  height: 70px;
-  font-size: 20px;
-  border: none;
-  border-bottom: 2px solid blue;
-  text-decoration: none;
-  background-color: white;
+	height: 70px;
+	font-size: 20px;
+	border: none;
+	border-bottom: 2px solid blue;
+	text-decoration: none;
+	background-color: white;
+}
+div h3 {
+	margin-bottom: 15px;
 }
