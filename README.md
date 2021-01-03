@@ -90,7 +90,7 @@ To Host the Project WE have used Vercel Platform. To see project [visit here](ht
 /form: - to add new employee details.
 ```
 
-## Author
+## Authors
 
 * **Altaf Shaikh** - *work by* - [ialtafshaikh](https://github.com/ialtafshaikh)
 
