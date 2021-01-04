@@ -76,6 +76,9 @@ a {
 .skills {
 	margin: 0 10px;
 }
+.skills:hover {
+	text-decoration: none;
+}
 .cardspan {
 	font-size: 20px;
 	font-weight: 800;
