@@ -63,3 +63,33 @@ p {
 	width: 100%;
 	border-radius: 0px 0px 20px 20px;
 }
+
+@media (max-width: 768px) {
+	.cardContainer .box {
+		margin: 30px;
+		max-width: 50%;
+	}
+}
+@media (max-width: 425px) {
+	.cardContainer .box {
+		margin: 30px;
+		max-width: 75%;
+	}
+	.imgWidth {
+		margin-left: 50px;
+	}
+}
+@media (max-width: 375px) {
+	.imgWidth {
+		margin-left: 40px;
+	}
+}
+@media (max-width: 325px) {
+	.cardContainer .box {
+		margin: 30px;
+		min-width: 100%;
+	}
+	.imgWidth {
+		margin-left: 40px;
+	}
+}

@@ -1,5 +1,5 @@
 div.divIndex {
-	margin-left: 500px;
+	margin-left: 400px;
 	padding-top: 250px;
 }
 
@@ -21,4 +21,26 @@ p.indexp {
 p.indexp:hover {
 	transform: scale(1.1);
 	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+	div.divIndex {
+		margin-left: 300px;
+	}
+}
+
+@media (max-width: 425px) {
+	div.divIndex {
+		margin-left: 50px;
+		padding-top: 150px;
+	}
+	h1.indexh1 {
+		width: 100%;
+		color: black;
+		font-size: 40px;
+	}
+	p.indexp {
+		margin-left: -20px;
+		width: 100%;
+	}
 }

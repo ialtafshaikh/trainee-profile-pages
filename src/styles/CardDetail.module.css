@@ -4,7 +4,7 @@
 }
 .box img {
 	padding: 20px;
-	width: 350px;
+	width: 300px;
 	height: 350px;
 }
 .box p {
@@ -75,6 +75,7 @@ a {
 }
 .skills {
 	margin: 0 10px;
+	text-transform: capitalize;
 }
 .skills:hover {
 	text-decoration: none;
@@ -105,7 +106,7 @@ span:hover {
 	}
 	.box img {
 		margin: 0 75px;
-		width: 70%;
+		width: 50%;
 	}
 	.detailh1 {
 		padding: 0;
