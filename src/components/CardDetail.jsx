@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import detail from "../styles/CardDetail.module.css";
 import { AiTwotoneMail, AiFillShop } from "react-icons/ai";
+import { FcAbout } from "react-icons/fc";
 import { GiSkills } from "react-icons/gi";
 import { CgBoy } from "react-icons/cg";
 import { FaGithub, FaLinkedin, FaGlobe } from "react-icons/fa";
@@ -83,6 +84,7 @@ export default class CardDetail extends Component {
 								<div className={detail.content}>
 									<br />
 									<br />
+									<FcAbout />
 									<span className={detail.cardspan}> About : </span>
 									{employee.altDescription}
 									<p className={detail.socialList}>
