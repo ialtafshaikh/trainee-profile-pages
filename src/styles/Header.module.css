@@ -8,9 +8,11 @@
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	flex: 1 0 25%;
+	padding: 0 15%;
 }
 #logo {
-	margin-left: 15%;
+	margin: 0;
+	width: 20%;
 	display: flex;
 }
 #titlePart {
@@ -30,15 +32,16 @@
 }
 /* menu*/
 #menu {
+	float: right;
+	width: 30%;
 	display: inline;
-	margin-left: 40%;
 	font-size: 20px;
 }
 #menu p {
+	float: left;
 	display: flex;
 	flex-direction: row;
-	padding-left: 20px;
-	cursor: default;
+	padding-left: 500px;
 	color: white;
 }
 #menu p a {

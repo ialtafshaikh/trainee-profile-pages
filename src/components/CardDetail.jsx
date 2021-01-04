@@ -76,7 +76,13 @@ export default class CardDetail extends Component {
 											{" "}
 											Hobbies :{" "}
 										</span>
-										{employee.hobbies}
+										{employee.hobbies.map((hobby) => {
+											return (
+												<span className={detail.skills}>
+													{hobby}
+												</span>
+											);
+										})}{" "}
 										<br />
 										<br />
 									</div>
