@@ -17,7 +17,7 @@
 	position: relative;
 	justify-content: space-evenly;
 	margin: 20px;
-	max-width: 30%;
+	max-width: 25%;
 	background: white;
 	border-radius: 20px;
 	flex-direction: column;
@@ -31,8 +31,8 @@
 	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .imgWidth {
-	margin-left: 50px;
-	width: 70%;
+	margin-left: 60px;
+	width: 65%;
 	height: 200px;
 	padding-top: 30px;
 }
