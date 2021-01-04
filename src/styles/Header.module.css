@@ -8,7 +8,7 @@
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	flex: 1 0 25%;
-	padding: 0 15%;
+	padding: 0 8%;
 }
 #logo {
 	margin: 0;
@@ -50,4 +50,34 @@
 	text-transform: uppercase;
 	color: white;
 	cursor: default;
+}
+
+@media (max-width: 768px) {
+	#menu p {
+		padding-left: 300px;
+	}
+}
+
+@media (max-width: 425px) {
+	.header {
+		height: 20%;
+	}
+	#titlePart {
+		margin-left: 36px;
+	}
+	#logo {
+		flex-direction: column;
+	}
+	#menu p {
+		padding-left: 123px;
+	}
+}
+@media (max-width: 325px) {
+	#titlePart {
+		margin-left: 16px;
+	}
+
+	#menu p {
+		padding-left: 63px;
+	}
 }
