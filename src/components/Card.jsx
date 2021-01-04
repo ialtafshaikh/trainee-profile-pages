@@ -10,7 +10,7 @@ export default class Card extends Component {
 
 	render() {
 		return (
-			<div>
+			<>
 				<div className={cardStyle.box}>
 					<div>
 						<Link to={"/profile/" + this.props.employee.employeeId}>
@@ -42,7 +42,7 @@ export default class Card extends Component {
 						</p>
 					</div>
 				</div>
-			</div>
+			</>
 		);
 	}
 }

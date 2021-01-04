@@ -7,13 +7,12 @@
 	width: 350px;
 	height: 350px;
 }
-.box p,
-.box h1 {
+.box p {
 	padding-left: 20px;
 }
 
 .box {
-	margin: 100px 0 0 200px;
+	margin: 100px auto;
 	width: 75%;
 	color: black;
 	display: flex;
@@ -23,19 +22,18 @@
 	box-shadow: 20px 20px 25px black;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	padding: 5px;
+	padding: 0;
 	flex: 1 0 25%;
 }
 .box .details {
-	padding-left: 10%;
 	width: 80%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	margin: 16px 0px 0px 50px;
 }
 
 .box .details h1 {
-	padding-top: 10%;
 	flex-direction: column;
 }
 
@@ -59,14 +57,18 @@
 	font-size: 20px;
 	align-content: center;
 	text-align: justify;
+	width: 50%;
+	margin: 20px 250px;
 }
+
 a {
 	color: black;
 	text-align: end;
 	align-content: flex-end;
 }
 .box .content .back {
-	align-content: center;
+	justify-content: center;
+	margin-left: 340px;
 }
 .box .content p a {
 	padding: 20px;
@@ -82,4 +84,95 @@ a {
 span:hover {
 	transform: scale(1.2);
 	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+	.box {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	.box .details {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		margin: 16px 0px 0px 50px;
+	}
+	.box img {
+		margin: 0 75px;
+		width: 70%;
+	}
+	.detailh1 {
+		padding: 0;
+	}
+	.box .content p {
+		font-size: 20px;
+		align-content: center;
+		text-align: justify;
+		display: flex;
+		width: 50%;
+		margin: 20px 120px;
+	}
+	.box .content .back {
+		justify-content: center;
+		margin-left: 130px;
+	}
+}
+
+@media (max-width: 425px) {
+	.box {
+		margin: 11% 11% 20% 11%;
+		margin-top: 100px;
+	}
+	.box img {
+		margin: 0 0 0 -10px;
+		padding: 10px 0;
+		width: 100%;
+	}
+	.detailh1 {
+		margin: 0;
+		padding: 0;
+	}
+	.box .details {
+		flex-direction: column;
+	}
+	p.socialList {
+		padding: 0;
+		width: 100%;
+		flex-direction: row;
+	}
+	.box .content p {
+		font-size: 20px;
+		align-content: center;
+		text-align: justify;
+		display: flex;
+		width: 50%;
+		margin: 20px 25px;
+	}
+	.box .content .back {
+		justify-content: center;
+		margin-left: 60px;
+	}
+}
+
+@media (max-width: 325px) {
+	.box .detail {
+		margin: 0 auto;
+	}
+	.box img {
+		margin-left: -20px;
+	}
+	.detailh1 {
+		margin-left: -30px;
+		padding: 0;
+	}
+	.box .content p a {
+		padding: 0 10px;
+	}
+	.box .content .back {
+		justify-content: center;
+		margin-left: 35px;
+	}
 }

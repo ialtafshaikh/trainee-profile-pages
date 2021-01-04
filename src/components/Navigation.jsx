@@ -6,7 +6,7 @@ import { FaHome, FaRegIdCard, FaPlus } from "react-icons/fa";
 export default class Navigation extends Component {
 	render() {
 		return (
-			<div>
+			<>
 				<p id={NavigationStyles.menu}>
 					<Link to="/">
 						<FaHome title="Home" />
@@ -18,7 +18,7 @@ export default class Navigation extends Component {
 						<FaPlus title="Employee Add" />
 					</Link>
 				</p>
-			</div>
+			</>
 		);
 	}
 }

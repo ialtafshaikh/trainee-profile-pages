@@ -4,7 +4,7 @@ import FormElementStyles from "../styles/Form.module.css";
 export default class FormElements extends Component {
 	render() {
 		return (
-			<div>
+			<>
 				<div className={FormElementStyles.mainDiv}>
 					<h1>Add Employee</h1>
 					<div className={FormElementStyles.elementContainer1}>
@@ -126,7 +126,7 @@ export default class FormElements extends Component {
 						</div>
 					</div>
 				</div>
-			</div>
+			</>
 		);
 	}
 }
